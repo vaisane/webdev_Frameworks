@@ -1,0 +1,26 @@
+.item
+{
+  background-color: pink;
+  margin-bottom: 5px;      
+}
+
+.item > div
+{
+  margin-left: 4px;
+}
+
+.flex
+{
+  display: flex;
+}
+
+.itemQtyUnit
+{
+  width: 30px;    
+}
+
+.deleteButton{
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
