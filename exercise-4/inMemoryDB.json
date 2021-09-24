@@ -1,0 +1,129 @@
+{
+    "products":[
+        {
+            "id": "1",
+            "product name": "Roku Express 4K+ 2021",
+            "manufacturer": "Roku",
+            "category": "streaming",
+            "picture": "roku express 4k.png",
+            "price": 29.99,
+            "rating": 4.5
+        },
+        {
+            "id": "2",
+            "product name": "Seagate Portable 2TB External Hard Drive",
+            "manufacturer": "Seagate",
+            "category": "hard drive",
+            "picture": "seagate portable 2tb.png",
+            "price": 59.99,
+            "rating": 4.5
+        },
+        {
+            "id": "3",
+            "product name": "Logitech H390 Wired Headset",
+            "manufacturer": "Logitech",
+            "category": "headphones",
+            "picture": "logitech headphone.png",
+            "price": 29.45,
+            "rating": 4
+        },
+        {
+            "id": "4",
+            "product name": "Logitech BRIO Ultra HD Webcam",
+            "manufacturer": "Logitech",
+            "category": "webcam",
+            "picture": "logitech webcam.png",
+            "price": 165.5,
+            "rating": 5
+        },
+        {
+            "id": "5",
+            "product name": "HP 24mh FHD Monitor - Computer Monitor with 23.8-Inch IPS Display",
+            "manufacturer": "HP",
+            "category": "monitor",
+            "picture": "hp monitor.png",
+            "price": 209.99,
+            "rating": 4
+        },
+        {
+            "id": "6",
+            "product name": "Sceptre E248W-19203R 24 Ultra Thin 75Hz 1080p LED Monitor",
+            "manufacturer": "Sceptre",
+            "category": "monitor",
+            "picture": "sceptre monitor.png",
+            "price": 149.99,
+            "rating": 3.5
+        },
+        {
+            "id": "7",
+            "product name": "Logitech C920x HD Pro Webcam",
+            "manufacturer": "Logitech",
+            "category": "webcam",
+            "picture": "logitech webcam2.png",
+            "price": 129.99,
+            "rating": 5
+        },
+        {
+            "id": "8",
+            "product name": "Lenovo Legion 5 15 Gaming Laptop",
+            "manufacturer": "Lenovo",
+            "category": "laptop",
+            "picture": "lenovo laptop.png",
+            "price": 1049.99,
+            "rating": 5
+        },
+        {
+            "id": "9",
+            "product name": "Acer Nitro 5 AN515-55-53E5 Gaming Laptop",
+            "manufacturer": "Acer",
+            "category": "laptop",
+            "picture": "acer laptop.png",
+            "price": 799.99,
+            "rating": 4.5
+        },
+        {
+            "id": "10",
+            "product name": "BENGOO G9000 Stereo Gaming Headset",
+            "manufacturer": "Bengoo",
+            "category": "headphones",
+            "picture": "bengoo headphones.png",
+            "price": 23.99,
+            "rating": 3.5
+        },
+        {
+            "id": "11",
+            "product name": "Logitech M705 Wireless Marathon Mouse for PC",
+            "manufacturer": "Logitech",
+            "category": "mouse",
+            "picture": "logitech mouse.png",
+            "price": 20.99,
+            "rating": 3.5
+        },
+        {   "id": "12",
+            "product name": "Logitech G502 HERO High Performance Wired Gaming Mouse",
+            "manufacturer": "Logitech",
+            "category": "mouse",
+            "picture": "logitech mouse2.png",
+            "price": 44.99,
+            "rating": 4.5
+        }
+    ],
+    "users": [
+        {   "id": "1",
+            "name": "Jani",
+            "adress": "Hiidentie 2",
+            "phone": "123123123",
+            "email": "jani@oamk.fi",
+            "invoices": []
+        },
+        {   "id": "2",
+            "name": "Petteri",
+            "adress": "Kirkkotie 4",
+            "phone": "14445123",
+            "email": "Petteri@oamk.fi",
+            "invoices": []
+        }
+    ],
+    "shoppingCart":[]
+
+}
