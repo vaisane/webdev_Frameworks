@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { v4: uuidv4 } = require('uuid');
-
+router.use(express.json());
+router.use(express.urlencoded({extended: true}));
 // Product storage in memory
 let inMemoryDB = require('../inMemoryDB.json')
 
@@ -9,11 +10,12 @@ let inMemoryDB = require('../inMemoryDB.json')
 router.post('/', (req, res) => {
     inMemoryDB.products.push({
       id: uuidv4(),
-      name: req.body.name,
+      productName: req.body.name,
       manufacturer: req.body.manufacturer,
       category: req.body.category,
       description: req.body.description,
-      price: req.body.price    
+      price: req.body.price,
+      rating: req.body.rating
     })
     res.send("New product created");
   })
@@ -30,13 +32,15 @@ router.post('/', (req, res) => {
   })
   
   // Delete single product
-  router.delete('/id=:id', (req, res) => {
-    let index = inMemoryDB.products.findIndex(e => e.id === req.params.id);
+  router.delete('/', (req, res) => {
+    let index = inMemoryDB.products.findIndex(e => e.id === req.body.id);
     if(index !== -1) {
       inMemoryDB.products.splice(index, 1);
-      res.send("Deleted")
+      res.status(200).send("Deleted")
+    } else {
+      res.send("Not found")
     }
-    res.send("Not found")
+    
   })
   
   // Modify single product

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topBar{
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.searchInputField{
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+}
+.searchView{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.ProductComponent{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.ProductComponent img{
+    height: 150px;
+    width : 200px;
+}
+
+.price{
+    display:flex;
+    align-items: center;
+}
+
+.priceFont{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.adminView{
+    margin-top:30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.adminViewInputRow{
+    width: 300px;
+    display:flex;
+    justify-content: space-between;
+}

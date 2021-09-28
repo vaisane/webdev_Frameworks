@@ -13,7 +13,7 @@ router.post("/", (req, res) => {
     let items = [];
     let totalPrice = 0;
     for(let i = 0; i < inMemoryDB.shoppingCart.length; i++){
-        items.push(inMemoryDB.shoppingCart[i]["product name"])
+        items.push(inMemoryDB.shoppingCart[i].productName)
     }
     for(let i = 0; i < inMemoryDB.shoppingCart.length; i++){
         totalPrice += inMemoryDB.shoppingCart[i].price;

@@ -2,3 +2,4 @@
 -exercise 2: 1p, fully completed
 -exercise 3: 1p, fully completed
 -exercise 4: 1p, fully completed
+-exercise 5: 1p, fully completed
