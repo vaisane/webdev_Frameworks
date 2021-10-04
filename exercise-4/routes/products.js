@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
       price: req.body.price,
       rating: req.body.rating
     })
-    res.send("New product created");
+    res.json(inMemoryDB.products);
   })
   
   // Get all inMemoryDB.products
@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
     let index = inMemoryDB.products.findIndex(e => e.id === req.body.id);
     if(index !== -1) {
       inMemoryDB.products.splice(index, 1);
-      res.status(200).send("Deleted")
+      res.status(200).json(inMemoryDB.products);
     } else {
       res.send("Not found")
     }

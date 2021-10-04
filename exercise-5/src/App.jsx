@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import SearchView from './components/SearchView';
 import AdminView from './components/AdminView';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
 
 export default class App extends Component {
   constructor(props) {
@@ -28,11 +27,6 @@ export default class App extends Component {
     this.setState({showAdminPanel: !this.state.showAdminPanel})
   }
   addItems = (productName, manufacturer, price, category, rating) =>  {
-    let newProducts = [...this.state.productData];
-    let id = uuidv4();
-    newProducts.push({"id": id, productName: productName, "manufacturer": manufacturer, "price": price, "rating": rating})
-    this.setState({productData: newProducts})
-  
    axios.post('http://localhost:4000/products', {
      name: productName,
      manufacturer: manufacturer,
@@ -40,17 +34,13 @@ export default class App extends Component {
      category: category,
      rating: rating
    })
-   .then(res => console.log(res))
+   .then(res => this.setState({productData: res.data}))
    .catch(error => console.log(error))
   }
+
   deleteItems = (index) => {
-    let newProducts = [...this.state.productData];
-    console.log(this.state.productData[index].id)
-    newProducts.splice(index, 1);
-    this.setState({productData: newProducts})
-    
     axios.delete("http://localhost:4000/products/", { data: {id: this.state.productData[index].id}})
-    .then(res => console.log(res))
+    .then(res => this.setState({productData: res.data}))
     .catch(error => console.log(error))
   }
   render() {
