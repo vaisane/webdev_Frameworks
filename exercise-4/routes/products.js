@@ -80,7 +80,7 @@ router.post('/', (req, res) => {
   
   // Name
   router.get('/name=:name', (req, res) => {
-    let indexArray = getAllIndexes(inMemoryDB.products, req.params.name, "name")
+    let indexArray = getAllIndexes(inMemoryDB.products, req.params.name, "productName")
     let searchResult = [];
     for(let i = 0; i<indexArray.length; i++){
       searchResult.push(inMemoryDB.products[indexArray[i]]);
